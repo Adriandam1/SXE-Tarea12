@@ -99,7 +99,21 @@ Realiza una consulta que permita obtener un listado de todos los contactos de Od
 - Nombre  
 - Cuya ciudad sea Tracy, y código postal 95304  
 - Nombre comercial de la empresa  
-ordenados alfabéticamente por el nombre comercial de la empresa,  
+ordenados alfabéticamente por el nombre comercial de la empresa,
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+SELECT name, city, zip, commercial_company_name
+FROM res_partner
+WHERE city = 'Tracy' AND zip = '95304'
+ORDER BY commercial_company_name;
+  ```
+
+</details>
+
+![sxe-10](https://github.com/user-attachments/assets/a359d9eb-1b5e-4b8c-bde0-23146cb2a1e6)
+
+
 ## Apartado 5 
 Utilizando las tablas de odoo, obtén un listado de empresas proveedoras, que han emitido algún reembolso (facturas rectificativas de proveedor)  
 - Nombre de la empresa  
