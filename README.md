@@ -26,6 +26,29 @@ Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser nec
 ● quiereAlumnos: Booleano.  
 ● numAlumnos: número entero.  
 ● fechaContacto: tipo fecha  
+
+Para ello nos situamos en nuestra base de datos click derecho -> Query Tool
+![sxe-3](https://github.com/user-attachments/assets/9e997c34-04b5-4417-9767-f45cf4728271)
+
+Y lanzamos la siguiente sentencia:
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+  CREATE TABLE EmpresasFCT (
+      idEmpresa SERIAL PRIMARY KEY,
+      nombre VARCHAR(40) NOT NULL,
+      quiereAlumnos BOOLEAN,
+      numAlumnos INTEGER,
+      fechaContacto DATE
+  );
+```
+
+</details>
+
+![sxe-4](https://github.com/user-attachments/assets/2be4b1ec-5e57-4625-a0de-473c1ef38db0)  
+Comprobamos que nos ha creado las tablas:  
+![sxe-5](https://github.com/user-attachments/assets/f42c0bdf-7df6-4003-a321-79822a30c74f)  
+
 ## Apartado 2 
 Inserta 5 registros inventados en la tabla a través de una sentencia SQL.  
 ## Apartado 3 
