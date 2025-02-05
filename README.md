@@ -16,7 +16,7 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 ### Añado las aplicaciones de Contactos y Facturación comprobando que estan los demos
 ![sxe-2](https://github.com/user-attachments/assets/7bdaddfd-45af-4283-b899-9b0c1dee9edf)
 
-
+**Apunte: para llevar a cabo los ejercicios hemos de ir PGAdmin, en mi caso: http://192.168.1.134:5050/ y comprobar que conecto nuestra base de datos.**
 
 ## Apartado 1  
 Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser necesario crear tablas ajenas a Odoo dentro de su base de datos (integración con sistemas externos, almacenamiento de históricos, datos temporales…). Mediante la herramienta PgAdmin u otro método que estimes oportuno, elabora y ejecuta una sentencia que cree una tabla llamada “EmpresasFCT“con los siguientes campos:  
