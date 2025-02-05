@@ -76,11 +76,24 @@ Y comprobamos:
 ![sxe-8](https://github.com/user-attachments/assets/3f39e3c5-ec98-471d-89a0-9b43e0ef676c)  
 
 
-
 ## Apartado 3 
 Realiza una consulta donde se muestren todos los datos de la tabla EmpresasFCT 
 ordenados por fechaContacto, de modo que en la primera fila salga el que tenga la 
 fecha más reciente. 
+
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+SELECT * FROM empresasfct ORDER BY fechacontacto DESC; 
+```
+
+</details>
+
+![sxe-9](https://github.com/user-attachments/assets/1c425962-add1-4eb3-9269-a15f942eb2d3)
+
+
+
+
 ## Apartado 4  
 Realiza una consulta que permita obtener un listado de todos los contactos de Odoo (no empresas) con la siguiente información:  
 - Nombre  
