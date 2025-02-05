@@ -166,5 +166,23 @@ HAVING COUNT(am.id) > 2;
 
 ## Apartado 7  
 Crea una sentencia que actualice el correo de los contactos cuyo dominio es @bilbao.example.com a @bilbao.bizkaia.eus 
+
+Lanzamos la sentencia:
+
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+UPDATE res_partner SET email = '@bilbao.bizkaia.neus' WHERE email ='@bilbao.example.com';
+  ```
+
+</details>
+
+Comprobamos:  
+![sxe-13](https://github.com/user-attachments/assets/15804f25-2d93-4b3a-af16-5933b845ab59)
+
+
 ## Apartado 8  
 La empresa Ready Mat ha hecho un ERE y ha despedido a todos los empleados que tenías como contacto. Crea una sentencia que elimine todos los contactos pertenecientes a la empresa “Ready Mat”, pero mantén la empresa. Añade una captura de pantalla de la sección de ontactos de odoo con Ready Mat antes y después.  
+
+
+
