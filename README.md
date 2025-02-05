@@ -49,8 +49,34 @@ Y lanzamos la siguiente sentencia:
 Comprobamos que nos ha creado las tablas:  
 ![sxe-5](https://github.com/user-attachments/assets/f42c0bdf-7df6-4003-a321-79822a30c74f)  
 
-## Apartado 2 
+## Apartado 2  
 Inserta 5 registros inventados en la tabla a través de una sentencia SQL.  
+
+Volvemos al query:
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+INSERT INTO EmpresasFCT (nombre, quiereAlumnos, numAlumnos, fechaContacto)
+VALUES
+    ('Empresa A', TRUE, 5, '2024-02-01'),
+    ('Empresa B', FALSE, 0, '2024-01-15'),
+    ('Empresa C', TRUE, 2, '2024-02-10'),
+    ('Empresa D', FALSE, 0, '2024-03-05'),
+    ('Empresa E', TRUE, 10, '2024-01-25');
+```
+
+</details>
+
+![sxe-6](https://github.com/user-attachments/assets/eb836c17-5eb9-4d24-a463-82a10a376e86)  
+
+Le damos a View/Edit data:  
+![sxe-7](https://github.com/user-attachments/assets/b4f9e837-0fb0-41ae-96c2-75e60f99fca6)  
+
+Y comprobamos:  
+![sxe-8](https://github.com/user-attachments/assets/3f39e3c5-ec98-471d-89a0-9b43e0ef676c)  
+
+
+
 ## Apartado 3 
 Realiza una consulta donde se muestren todos los datos de la tabla EmpresasFCT 
 ordenados por fechaContacto, de modo que en la primera fila salga el que tenga la 
