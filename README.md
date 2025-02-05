@@ -9,6 +9,15 @@ puede ser necesario realizar este tipo de acciones.
 La tarea se realizará en un repositorio en vuestra cuenta de github (no hace falta  
 que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.  
 
+## Preparación:  
+### Creo nueva base de datos con los archivos de demo:  
+![sxe-1](https://github.com/user-attachments/assets/c9f8b2c9-8991-4996-829d-ab991e6e6a2f)
+
+### Añado las aplicaciones de Contactos y Facturación comprobando que estan los demos
+![sxe-2](https://github.com/user-attachments/assets/7bdaddfd-45af-4283-b899-9b0c1dee9edf)
+
+
+
 ## Apartado 1  
 Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser necesario crear tablas ajenas a Odoo dentro de su base de datos (integración con sistemas externos, almacenamiento de históricos, datos temporales…). Mediante la herramienta PgAdmin u otro método que estimes oportuno, elabora y ejecuta una sentencia que cree una tabla llamada “EmpresasFCT“con los siguientes campos:  
 ● idEmpresa: autonumérico. Este campo será la clave primaria. 
