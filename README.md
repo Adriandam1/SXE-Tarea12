@@ -184,5 +184,24 @@ Comprobamos:
 ## Apartado 8  
 La empresa Ready Mat ha hecho un ERE y ha despedido a todos los empleados que tenías como contacto. Crea una sentencia que elimine todos los contactos pertenecientes a la empresa “Ready Mat”, pero mantén la empresa. Añade una captura de pantalla de la sección de ontactos de odoo con Ready Mat antes y después.  
 
+Captura de pantalla antes de eliminar los contactos:  
+![sxe-14](https://github.com/user-attachments/assets/52a8c352-f9db-42d7-b69e-4571406af683)
+
+Lanzamos la sentencia:
+
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+DELETE from res_partner where commercial_company_name = 'Ready Mat' and is_company = FALSE;
+  ```
+
+</details>
+
+![sxe-15](https://github.com/user-attachments/assets/6f40159a-b012-4196-97d5-2ad2d4beb647)
+
+
+
+
+
 
 
