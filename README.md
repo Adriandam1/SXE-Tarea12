@@ -132,7 +132,6 @@ FROM account_move am
 JOIN res_partner rp ON am.partner_id = rp.id
 WHERE am.move_type = 'in_refund'
 ORDER BY am.invoice_date DESC;
-
   ```
 
 </details>
@@ -145,7 +144,26 @@ Utilizando las tablas de odoo, obtén un listado de empresas clientes, a las que
 - Nombre de la empresa  
 - Número de facturas  
 - Total de factura con impuestos  
-- Total facturado SIN IMPUESTOS  
+- Total facturado SIN IMPUESTOS
+
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+SELECT rp.name AS empresa, COUNT(am.id) AS num_facturas,
+       SUM(am.amount_total) AS total_con_impuestos,
+       SUM(am.amount_untaxed) AS total_sin_impuestos
+FROM account_move am
+JOIN res_partner rp ON am.partner_id = rp.id
+WHERE am.move_type = 'out_invoice' AND am.state = 'posted'
+GROUP BY rp.name
+HAVING COUNT(am.id) > 2;
+  ```
+
+</details>
+
+![sxe-12](https://github.com/user-attachments/assets/5b29076f-f5be-4cad-8235-8670af9d6129)
+
+
 ## Apartado 7  
 Crea una sentencia que actualice el correo de los contactos cuyo dominio es @bilbao.example.com a @bilbao.bizkaia.eus 
 ## Apartado 8  
