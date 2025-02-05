@@ -1,16 +1,16 @@
 # SXE-Tarea12
 
 ## Índice  
-1. [Enunciado](#enunciado)  
-2. [Preparación](#preparación)  
-3. [Apartado 1: Crear tabla EmpresasFCT](#apartado-1-crear-tabla-empresasfct)  
-4. [Apartado 2: Insertar registros](#apartado-2-insertar-registros)  
-5. [Apartado 3: Consultar EmpresasFCT](#apartado-3-consultar-empresasfct)  
-6. [Apartado 4: Listar contactos de Tracy](#apartado-4-listar-contactos-de-tracy)  
-7. [Apartado 5: Empresas proveedoras con reembolsos](#apartado-5-empresas-proveedoras-con-reembolsos)  
-8. [Apartado 6: Clientes con más de dos facturas](#apartado-6-clientes-con-mas-de-dos-facturas)  
-9. [Apartado 7: Actualizar correos](#apartado-7-actualizar-correos)  
-10. [Apartado 8: Eliminar contactos de Ready Mat](#apartado-8-eliminar-contactos-de-ready-mat)  
+1. [Enunciado](#1-enunciado)  
+2. [Preparación](#2-preparación)  
+3. [Apartado 1: Crear tabla EmpresasFCT](#3-apartado-1)  
+4. [Apartado 2: Insertar registros](#4-apartado-2)  
+5. [Apartado 3: Consultar EmpresasFCT](#5-apartado-3)  
+6. [Apartado 4: Listar contactos de Tracy](#6-apartado-4)  
+7. [Apartado 5: Empresas proveedoras con reembolsos](#7-apartado-5)  
+8. [Apartado 6: Clientes con más de dos facturas](#8-apartado-6)  
+9. [Apartado 7: Actualizar correos](#9-apartado-7)  
+10. [Apartado 8: Eliminar contactos de Ready Mat](#10-apartado-8)  
 
 ---------------------------------------------
 
