@@ -14,7 +14,7 @@
 
 ---------------------------------------------
 
-## Enunciado:  
+## 1) Enunciado:  
 Introducción  
 Este ejercicio consiste en realizar una serie de operaciones sobre la base de datos  
 de una instalación de odoo. Si bien, es cierto que no es algo que se produzca  
@@ -25,7 +25,7 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 
 -----------------------------------------------
 
-## Preparación:  
+## 2) Preparación:  
 ### Creo nueva base de datos con los archivos de demo:  
 ![sxe-1](https://github.com/user-attachments/assets/c9f8b2c9-8991-4996-829d-ab991e6e6a2f)
 
@@ -36,7 +36,7 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 
 ------------------------------------------------
 
-## Apartado 1  
+## 3) Apartado 1  
 Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser necesario crear tablas ajenas a Odoo dentro de su base de datos (integración con sistemas externos, almacenamiento de históricos, datos temporales…). Mediante la herramienta PgAdmin u otro método que estimes oportuno, elabora y ejecuta una sentencia que cree una tabla llamada “EmpresasFCT“con los siguientes campos:  
 ● idEmpresa: autonumérico. Este campo será la clave primaria. 
 ● nombre: Texto con tamaño máximo de 40 caracteres.  
@@ -69,7 +69,7 @@ Comprobamos que nos ha creado las tablas:
 
 ------------------------------------------------
 
-## Apartado 2  
+## 4) Apartado 2  
 Inserta 5 registros inventados en la tabla a través de una sentencia SQL.  
 
 Volvemos al query:
@@ -97,7 +97,7 @@ Y comprobamos:
 
 ------------------------------------------------
 
-## Apartado 3 
+## 5) Apartado 3 
 Realiza una consulta donde se muestren todos los datos de la tabla EmpresasFCT 
 ordenados por fechaContacto, de modo que en la primera fila salga el que tenga la 
 fecha más reciente. 
@@ -114,7 +114,7 @@ SELECT * FROM empresasfct ORDER BY fechacontacto DESC;
 
 ------------------------------------------------
 
-## Apartado 4  
+## 6) Apartado 4  
 Realiza una consulta que permita obtener un listado de todos los contactos de Odoo (no empresas) con la siguiente información:  
 - Nombre  
 - Cuya ciudad sea Tracy, y código postal 95304  
@@ -135,7 +135,7 @@ ORDER BY commercial_company_name;
 
 ------------------------------------------------
 
-## Apartado 5 
+## 7) Apartado 5 
 Utilizando las tablas de odoo, obtén un listado de empresas proveedoras, que han emitido algún reembolso (facturas rectificativas de proveedor)  
 - Nombre de la empresa  
 - Número de factura  
@@ -161,7 +161,7 @@ ORDER BY am.invoice_date DESC;
 
 ------------------------------------------------
 
-## Apartado 6  
+## 8) Apartado 6  
 Utilizando las tablas de odoo, obtén un listado de empresas clientes, a las que se les ha emitido más de dos facturas de venta (solo venta) confirmadas, mostrando los siguientes datos:  
 - Nombre de la empresa  
 - Número de facturas  
@@ -187,7 +187,7 @@ HAVING COUNT(am.id) > 2;
 
 ------------------------------------------------
 
-## Apartado 7  
+## 9) Apartado 7  
 Crea una sentencia que actualice el correo de los contactos cuyo dominio es @bilbao.example.com a @bilbao.bizkaia.eus 
 
 Lanzamos la sentencia:
@@ -205,7 +205,7 @@ Comprobamos:
 
 ------------------------------------------------
 
-## Apartado 8  
+## 10) Apartado 8  
 La empresa Ready Mat ha hecho un ERE y ha despedido a todos los empleados que tenías como contacto. Crea una sentencia que elimine todos los contactos pertenecientes a la empresa “Ready Mat”, pero mantén la empresa. Añade una captura de pantalla de la sección de ontactos de odoo con Ready Mat antes y después.  
 
 Captura de pantalla antes de eliminar los contactos:  
