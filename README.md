@@ -31,10 +31,12 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 
 ## 2) Preparación:  
 ### Creo nueva base de datos con los archivos de demo:  
-![sxe-1](https://github.com/user-attachments/assets/c9f8b2c9-8991-4996-829d-ab991e6e6a2f)
+![sxe-1](https://github.com/user-attachments/assets/7b39a233-f81f-41fb-9b3c-59177008cfc9)
+
 
 ### Añado las aplicaciones de Contactos y Facturación comprobando que estan los demos
-![sxe-2](https://github.com/user-attachments/assets/7bdaddfd-45af-4283-b899-9b0c1dee9edf)
+![sxe-2](https://github.com/user-attachments/assets/9e440273-51ed-4718-8b2f-862f0d26a375)
+
 
 **Apunte: para llevar a cabo los ejercicios hemos de ir PGAdmin, en mi caso: http://192.168.1.134:5050/ y comprobar que conecto nuestra base de datos.**
 
@@ -52,8 +54,9 @@ Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser nec
 ● numAlumnos: número entero.  
 ● fechaContacto: tipo fecha  
 
-Para ello nos situamos en nuestra base de datos click derecho -> Query Tool
-![sxe-3](https://github.com/user-attachments/assets/9e997c34-04b5-4417-9767-f45cf4728271)
+Para ello nos situamos en nuestra base de datos click derecho -> Query Tool  
+![sxe-3](https://github.com/user-attachments/assets/05f55b9b-462c-4b40-b3ab-fb405a59fc43)
+
 
 Y lanzamos la siguiente sentencia:
 <details><summary>🔍 SPOILER:</summary>  
