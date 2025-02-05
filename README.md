@@ -121,7 +121,25 @@ Utilizando las tablas de odoo, obtén un listado de empresas proveedoras, que ha
 - Fecha de la factura  
 - total de factura con impuestos  
 - Total factura SIN mpuestos  
-Ordenadas por fecha de factura de modo que la primera sea la más reciente.  
+Ordenadas por fecha de factura de modo que la primera sea la más reciente.
+
+<details><summary>🔍 SPOILER:</summary>  
+
+  ```bash
+SELECT rp.name AS empresa, am.name AS numero_factura, am.invoice_date AS fecha,
+       am.amount_total AS total_con_impuestos, am.amount_untaxed AS total_sin_impuestos
+FROM account_move am
+JOIN res_partner rp ON am.partner_id = rp.id
+WHERE am.move_type = 'in_refund'
+ORDER BY am.invoice_date DESC;
+
+  ```
+
+</details>
+
+![sxe-11](https://github.com/user-attachments/assets/434d11e8-9a33-44be-898b-47ff1dfc601a)
+
+
 ## Apartado 6  
 Utilizando las tablas de odoo, obtén un listado de empresas clientes, a las que se les ha emitido más de dos facturas de venta (solo venta) confirmadas, mostrando los siguientes datos:  
 - Nombre de la empresa  
