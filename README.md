@@ -23,6 +23,10 @@ puede ser necesario realizar este tipo de acciones.
 La tarea se realizará en un repositorio en vuestra cuenta de github (no hace falta  
 que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.  
 
+
+
+[Volver al inicio](#índice) 
+
 -----------------------------------------------
 
 ## 2) Preparación:  
@@ -33,6 +37,9 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 ![sxe-2](https://github.com/user-attachments/assets/7bdaddfd-45af-4283-b899-9b0c1dee9edf)
 
 **Apunte: para llevar a cabo los ejercicios hemos de ir PGAdmin, en mi caso: http://192.168.1.134:5050/ y comprobar que conecto nuestra base de datos.**
+
+[Volver al inicio](#índice) 
+
 
 ------------------------------------------------
 
@@ -67,6 +74,9 @@ Y lanzamos la siguiente sentencia:
 Comprobamos que nos ha creado las tablas:  
 ![sxe-5](https://github.com/user-attachments/assets/f42c0bdf-7df6-4003-a321-79822a30c74f)  
 
+[Volver al inicio](#índice) 
+
+
 ------------------------------------------------
 
 ## 4) Apartado 2  
@@ -95,6 +105,9 @@ Le damos a View/Edit data:
 Y comprobamos:  
 ![sxe-8](https://github.com/user-attachments/assets/3f39e3c5-ec98-471d-89a0-9b43e0ef676c)  
 
+[Volver al inicio](#índice) 
+
+
 ------------------------------------------------
 
 ## 5) Apartado 3 
@@ -111,6 +124,9 @@ SELECT * FROM empresasfct ORDER BY fechacontacto DESC;
 </details>
 
 ![sxe-9](https://github.com/user-attachments/assets/1c425962-add1-4eb3-9269-a15f942eb2d3)
+
+[Volver al inicio](#índice) 
+
 
 ------------------------------------------------
 
@@ -132,6 +148,9 @@ ORDER BY commercial_company_name;
 </details>
 
 ![sxe-10](https://github.com/user-attachments/assets/a359d9eb-1b5e-4b8c-bde0-23146cb2a1e6)
+
+[Volver al inicio](#índice) 
+
 
 ------------------------------------------------
 
@@ -159,6 +178,9 @@ ORDER BY am.invoice_date DESC;
 
 ![sxe-11](https://github.com/user-attachments/assets/434d11e8-9a33-44be-898b-47ff1dfc601a)
 
+[Volver al inicio](#índice) 
+
+
 ------------------------------------------------
 
 ## 8) Apartado 6  
@@ -185,6 +207,9 @@ HAVING COUNT(am.id) > 2;
 
 ![sxe-12](https://github.com/user-attachments/assets/5b29076f-f5be-4cad-8235-8670af9d6129)
 
+[Volver al inicio](#índice) 
+
+
 ------------------------------------------------
 
 ## 9) Apartado 7  
@@ -202,6 +227,9 @@ UPDATE res_partner SET email = '@bilbao.bizkaia.neus' WHERE email ='@bilbao.exam
 
 Comprobamos:  
 ![sxe-13](https://github.com/user-attachments/assets/15804f25-2d93-4b3a-af16-5933b845ab59)
+
+[Volver al inicio](#índice) 
+
 
 ------------------------------------------------
 
@@ -222,6 +250,9 @@ DELETE from res_partner where commercial_company_name = 'Ready Mat' and is_compa
 </details>
 
 ![sxe-15](https://github.com/user-attachments/assets/6f40159a-b012-4196-97d5-2ad2d4beb647)
+
+
+[Volver al inicio](#índice) 
 
 
 
