@@ -1,5 +1,19 @@
 # SXE-Tarea12
 
+## Índice  
+1. [Enunciado](#enunciado)  
+2. [Preparación](#preparación)  
+3. [Apartado 1: Crear tabla EmpresasFCT](#apartado-1-crear-tabla-empresasfct)  
+4. [Apartado 2: Insertar registros](#apartado-2-insertar-registros)  
+5. [Apartado 3: Consultar EmpresasFCT](#apartado-3-consultar-empresasfct)  
+6. [Apartado 4: Listar contactos de Tracy](#apartado-4-listar-contactos-de-tracy)  
+7. [Apartado 5: Empresas proveedoras con reembolsos](#apartado-5-empresas-proveedoras-con-reembolsos)  
+8. [Apartado 6: Clientes con más de dos facturas](#apartado-6-clientes-con-mas-de-dos-facturas)  
+9. [Apartado 7: Actualizar correos](#apartado-7-actualizar-correos)  
+10. [Apartado 8: Eliminar contactos de Ready Mat](#apartado-8-eliminar-contactos-de-ready-mat)  
+
+---------------------------------------------
+
 ## Enunciado:  
 Introducción  
 Este ejercicio consiste en realizar una serie de operaciones sobre la base de datos  
@@ -9,6 +23,8 @@ puede ser necesario realizar este tipo de acciones.
 La tarea se realizará en un repositorio en vuestra cuenta de github (no hace falta  
 que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.  
 
+-----------------------------------------------
+
 ## Preparación:  
 ### Creo nueva base de datos con los archivos de demo:  
 ![sxe-1](https://github.com/user-attachments/assets/c9f8b2c9-8991-4996-829d-ab991e6e6a2f)
@@ -17,6 +33,8 @@ que sea privado). En el aula virtual escribid el enlace a vuestro repositorio.
 ![sxe-2](https://github.com/user-attachments/assets/7bdaddfd-45af-4283-b899-9b0c1dee9edf)
 
 **Apunte: para llevar a cabo los ejercicios hemos de ir PGAdmin, en mi caso: http://192.168.1.134:5050/ y comprobar que conecto nuestra base de datos.**
+
+------------------------------------------------
 
 ## Apartado 1  
 Como mencionamos en clase, aunque no es recomendable, en ocasiones puede ser necesario crear tablas ajenas a Odoo dentro de su base de datos (integración con sistemas externos, almacenamiento de históricos, datos temporales…). Mediante la herramienta PgAdmin u otro método que estimes oportuno, elabora y ejecuta una sentencia que cree una tabla llamada “EmpresasFCT“con los siguientes campos:  
@@ -49,6 +67,8 @@ Y lanzamos la siguiente sentencia:
 Comprobamos que nos ha creado las tablas:  
 ![sxe-5](https://github.com/user-attachments/assets/f42c0bdf-7df6-4003-a321-79822a30c74f)  
 
+------------------------------------------------
+
 ## Apartado 2  
 Inserta 5 registros inventados en la tabla a través de una sentencia SQL.  
 
@@ -75,6 +95,7 @@ Le damos a View/Edit data:
 Y comprobamos:  
 ![sxe-8](https://github.com/user-attachments/assets/3f39e3c5-ec98-471d-89a0-9b43e0ef676c)  
 
+------------------------------------------------
 
 ## Apartado 3 
 Realiza una consulta donde se muestren todos los datos de la tabla EmpresasFCT 
@@ -91,8 +112,7 @@ SELECT * FROM empresasfct ORDER BY fechacontacto DESC;
 
 ![sxe-9](https://github.com/user-attachments/assets/1c425962-add1-4eb3-9269-a15f942eb2d3)
 
-
-
+------------------------------------------------
 
 ## Apartado 4  
 Realiza una consulta que permita obtener un listado de todos los contactos de Odoo (no empresas) con la siguiente información:  
@@ -113,6 +133,7 @@ ORDER BY commercial_company_name;
 
 ![sxe-10](https://github.com/user-attachments/assets/a359d9eb-1b5e-4b8c-bde0-23146cb2a1e6)
 
+------------------------------------------------
 
 ## Apartado 5 
 Utilizando las tablas de odoo, obtén un listado de empresas proveedoras, que han emitido algún reembolso (facturas rectificativas de proveedor)  
@@ -138,6 +159,7 @@ ORDER BY am.invoice_date DESC;
 
 ![sxe-11](https://github.com/user-attachments/assets/434d11e8-9a33-44be-898b-47ff1dfc601a)
 
+------------------------------------------------
 
 ## Apartado 6  
 Utilizando las tablas de odoo, obtén un listado de empresas clientes, a las que se les ha emitido más de dos facturas de venta (solo venta) confirmadas, mostrando los siguientes datos:  
@@ -163,6 +185,7 @@ HAVING COUNT(am.id) > 2;
 
 ![sxe-12](https://github.com/user-attachments/assets/5b29076f-f5be-4cad-8235-8670af9d6129)
 
+------------------------------------------------
 
 ## Apartado 7  
 Crea una sentencia que actualice el correo de los contactos cuyo dominio es @bilbao.example.com a @bilbao.bizkaia.eus 
@@ -180,6 +203,7 @@ UPDATE res_partner SET email = '@bilbao.bizkaia.neus' WHERE email ='@bilbao.exam
 Comprobamos:  
 ![sxe-13](https://github.com/user-attachments/assets/15804f25-2d93-4b3a-af16-5933b845ab59)
 
+------------------------------------------------
 
 ## Apartado 8  
 La empresa Ready Mat ha hecho un ERE y ha despedido a todos los empleados que tenías como contacto. Crea una sentencia que elimine todos los contactos pertenecientes a la empresa “Ready Mat”, pero mantén la empresa. Añade una captura de pantalla de la sección de ontactos de odoo con Ready Mat antes y después.  
